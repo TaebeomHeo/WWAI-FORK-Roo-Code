@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "mcp-test-manager": {
+      "command": "python",
+      "args": [
+        "d:/000.Dev/WWAI-FORK-Roo-Code/ww_custom/mcp/test-manager/server.py"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}

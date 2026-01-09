@@ -49,6 +49,7 @@ import { QueuedMessages } from "./QueuedMessages"
 import DismissibleUpsell from "../common/DismissibleUpsell"
 import { useCloudUpsell } from "@src/hooks/useCloudUpsell"
 import { Cloud } from "lucide-react"
+import { ModeSelectorPrompt } from "./ModeSelectorPrompt"
 
 export interface ChatViewProps {
 	isHidden: boolean
@@ -1443,6 +1444,7 @@ const ChatViewComponent: React.ForwardRefRenderFunction<ChatViewRef, ChatViewPro
 						/>
 						<div className="flex flex-col gap-4 w-full">
 							<RooHero />
+							<ModeSelectorPrompt mode={mode} setMode={setMode} />
 							{/* Show RooTips when authenticated or when user is new */}
 							{taskHistory.length < 6 && <RooTips />}
 							{/* Everyone should see their task history if any */}
