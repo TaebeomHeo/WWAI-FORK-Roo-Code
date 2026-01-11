@@ -21,3 +21,28 @@
 
 #### 📊 분석가 의견
 이 전략은 **보안성**, **유지보수성**, **경제성** 측면에서 기존 파인튜닝 방식보다 우월합니다. 특히 Roo Code의 강력한 에이전트 기능과 MCP의 확장성을 결합하여 실질적인 업무 자동화를 가능하게 합니다.
+
+## 🚀 Project Status & Roadmap
+
+### ✅ Current Status (Completed)
+1.  **Manual Test Engineer Mode**:
+    *   Defined custom mode with "Meta Process" for TC management.
+    *   Created role definition and custom instructions.
+2.  **MCP Server (`test-manager`)**:
+    *   Implemented Python-based MCP server for Test Case operations (`search`, `save`, `setup`).
+3.  **UI Enhancements**:
+    *   Implemented `ModeSelectorPrompt` for quick mode selection on startup.
+4.  **Documentation**:
+    *   Test Guide (`ww_custom/modes/manual-test-engineer/TEST_GUIDE.md`).
+    *   Deployment Guide (`ww_custom/doc/DEPLOYMENT_GUIDE_FOR_PM.md`).
+    *   Modification History (`ww_custom/MODIFICATION_HISTORY.md`).
+
+### 📝 TODO / Roadmap
+1.  **User Verification**:
+    *   [ ] Verify "Manual Test Engineer" mode workflows with actual TC repositories.
+    *   [ ] Test Mode Selector Prompt interaction.
+2.  **Refinement**:
+    *   [ ] Gather feedback on prompt quality and MCP tool performance.
+    *   [ ] Enhance MCP tools (e.g., support for more complex TC formats, Excel export).
+3.  **Expansion**:
+    *   [ ] Add more custom modes (e.g., "Security Auditor", "Legacy Code Analyst").
