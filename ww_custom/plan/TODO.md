@@ -18,17 +18,17 @@ QA 업무 흐름에 최적화된 페르소나와 도구 권한 설정.
 - [ ] **QA Auditor Mode** (`qa-auditor`)
   - [ ] 역할 정의: 코드 리뷰 및 잠재적 결함 탐지
   - [ ] 권한: `read`, `mcp` (수정 권한 제한)
-- [ ] **Test Engineer Mode** (`test-engineer`)
-  - [ ] 역할 정의: 유닛/통합 테스트 코드 작성 및 실행
-  - [ ] 권한: `read`, `edit`, `command`, `mcp`
+- [x] **Test Engineer Mode** (`manual-test-engineer`)
+  - [x] 역할 정의: TC 관리 및 실행 (Manual Test)
+  - [x] 권한: `read`, `edit`, `command`, `mcp`
 - [ ] **Bug Reporter Mode** (`bug-reporter`)
   - [ ] 역할 정의: 발견된 이슈를 정형화된 포맷으로 리포팅
 
 ## 🔌 Phase 3: MCP 서버 구축 (MCP Servers)
 내부 시스템 및 도구와의 연동을 위한 MCP 서버 구현.
-- [ ] **Test Case Manager** (`mcp/test-manager`)
-  - [ ] 기능: 테스트 케이스 조회, 추가, 실행 결과 기록
-  - [ ] 기술: Python (FastMCP) + SQLite
+- [x] **Test Case Manager** (`mcp/test-manager`)
+  - [x] 기능: 테스트 케이스 조회, 추가, 실행 결과 기록
+  - [x] 기술: Python (FastMCP) + SQLite
 - [ ] **Bug Tracker Integration** (`mcp/bug-tracker`)
   - [ ] 기능: Jira/GitHub Issues 연동 (이슈 생성, 조회)
   - [ ] 기술: Python + REST API

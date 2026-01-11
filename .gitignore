@@ -52,3 +52,6 @@ qdrant_storage/
 
 # Architect plans
 plans/.roo/mcp.json
+ww_custom/.venv/
+ww_custom/temp_test_repo/
+ww_custom/mcp/test-manager/__pycache__/

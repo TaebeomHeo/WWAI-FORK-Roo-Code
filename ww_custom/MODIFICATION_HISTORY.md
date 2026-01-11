@@ -16,3 +16,4 @@ Tracking of custom modifications made to the Roo Code codebase.
 | 2026-01-09 | `webview-ui/src/components/chat/ModeSelectorPrompt.tsx` | Created UI component for mode selection on startup |
 | 2026-01-09 | `webview-ui/src/components/chat/ChatView.tsx` | Integrated `ModeSelectorPrompt` into the empty chat state |
 | 2026-01-09 | `ww_custom/MODIFICATION_HISTORY.md` | Created modification history log |
+| 2026-01-12 | `ww_custom/doc/` | Reorganized documentation: Moved reference docs to `reference/` folder |
