@@ -1,37 +1,56 @@
-# Local LLM Adaptation Strategy (Long-term Objective)
+# Local LLM Adaptation Strategy: Comprehensive Technical Framework
 
-## 📌 Context
-Observations from testing **Manual Test Engineer** mode revealed a significant performance gap between Local LLMs (e.g., GPT-022:20b) and Cloud LLMs (e.g., Claude 3.5 Sonnet).
+> Based on the "Comprehensive Technical Framework for Autonomous Coding Optimization" and "Local LLM Agent Suitability Test Methods".
 
-## 📉 Problem: The "Agentic Gap"
-Local LLMs (20B parameters or smaller) struggle with the high cognitive load required by Roo Code's agentic workflow.
+## 1. Architectural Vision: The 3-Layer Agent System
+To bridge the performance gap between Local and Cloud LLMs, we must shift from a monolithic approach to a layered architecture.
 
-### Key Observation Points
-1.  **Instruction Following**: Fails to retain complex, multi-step instructions (Context/Attention Loss).
-    - *Example*: Ignoring specific formatting rules or workflow state updates defined in `customInstructions`.
-2.  **Reasoning vs Pattern Matching**:
-    - **Cloud**: Logically infers missing edge cases.
-    - **Local**: Mimics surface-level patterns without deep understanding, leading to plausible-looking but logically flawed outputs.
-3.  **Tool Use Precision**: High failure rate in adhering to strict JSON/XML schemas for tool calling.
+### Layer 1: User Interaction & Intent (The "Vibe" Check)
+- **Goal**: Capture vague user intent and convert it into structured requirements.
+- **Model**: Low-latency, high-instruction-following local model or specialized "Architect" mode.
+- **Strategy**: 
+    - Use **Compact Prompts** to reduce token overhead.
+    - Remove "Roleplay" elements; focus on pure functional requirements.
 
-## 🚀 Strategy: Adaptation Plan
+### Layer 2: Context Orchestration (The "Memory" Manager)
+- **Goal**: Prevent "Context Saturation" where the model forgets earlier instructions.
+- **Strategy**:
+    - **Sliding Window**: Keep only the most relevant recent turns.
+    - **Summarization**: Periodically condense interaction history.
+    - **Needle-in-a-Haystack**: Validate if the model can retrieve key details from long contexts.
 
-To make Roo Code viable with Local LLMs, we cannot rely on the same configuration used for Clause Sonnet. We need a "Slim" or "Lite" strategy.
+### Layer 3: Execution & Coding (The "Hands")
+- **Goal**: Precise code generation and tool usage.
+- **Models**: Qwen 2.5 Coder 32B (Recommend), DeepSeek-V3 (API/Local).
+- **Strategy**: 
+    - **Strict Schema Enforcement**: Use "Grammar-constrained sampling" to force valid JSON outputs for tool calls.
+    - **Handoff Protocol**: Architect Model (Plans) -> Hacker/Coder Model (Implements).
 
-### 1. Prompt Optimization (Lite Modes)
-- **Action**: Create separate `.json` configurations for Local LLMs.
-- **Tactic**: drastic reduction of System Prompts.
-    - Remove "Personality" / "Role Definition" fluff.
-    - Use strict, short, imperative commands.
-    - Breakdown complex tasks into single-turn actions.
+## 2. Validation Pipeline: Staged "Gatekeeping"
+Before deploying a local model for Roo Code, it must pass a staged validation pipeline.
 
-### 2. Workflow Simplification
-- Avoid relying on the agent to manage its own state (e.g., "update your status manually").
-- Rely more on external scripts or forced user interaction rather than autonomous decision making.
+| Stage | Test Name | Metric | Tools |
+| :--- | :--- | :--- | :--- |
+| **0** | **Syntax Compliance** | valid JSON/XML \% | `promptfoo` |
+| **1** | **Tool Use Accuracy** | AST Match Score | `BFCL` (Berkeley Function Calling) |
+| **2** | **Context Retention** | Retrieval Accuracy | "Needle in a Haystack" Script |
+| **3** | **Practical Coding** | Pass Rate | `SWE-bench Lite` (Subset) |
+| **4** | **Usability (Vibes)** | Latency / Fatigue | Dogfooding |
 
-### 3. Future Research
-- **Fine-tuning**: Fine-tune a 10B-20B model specifically on Roo Code's system prompt and tool usage patterns.
-- **Constrained Decoding**: Enforce JSON output format at the inference engine level to prevent syntax errors.
+## 3. Implementation Roadmap
+
+### Phase 1: Infrastructure & Configuration
+- [ ] **Model Setup**: Deploy `qwen2.5-coder:32b` or similar via Ollama.
+- [ ] **Compact Mode Config**: Create a "Lite" version of `manual-test-engineer.json` specifically for local models (stripped of verbose instructions).
+- [ ] **Context Calibration**: Measure effective context window (TPS drop-off point) and set Roo Code limits accordingly (e.g., 80% of max).
+
+### Phase 2: Custom Tooling
+- [ ] **Prompt Optimizer**: Create a `.roo/system-prompt-lite` override for local environments.
+- [ ] **Validator Scripts**: Implement a python script to run Stage 0 (Syntax) and Stage 2 (Context) tests against the local endpoint.
+
+### Phase 3: Workflow Automation
+- [ ] **Architect-Coder Handoff**: Define a workflow where a "Plan" artifact is explicitly generated by a smarter model (or user) before the Local LLM starts coding.
+- [ ] **Auto-Approval Rules**: Configure `allow-list` for read-only tools to reduce user friction during local model latency.
 
 ---
-*Created: 2026-01-17*
+*Last Updated: 2026-01-17*

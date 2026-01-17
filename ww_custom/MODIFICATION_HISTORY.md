@@ -17,3 +17,8 @@ Tracking of custom modifications made to the Roo Code codebase.
 | 2026-01-09 | `webview-ui/src/components/chat/ChatView.tsx` | Integrated `ModeSelectorPrompt` into the empty chat state |
 | 2026-01-09 | `ww_custom/MODIFICATION_HISTORY.md` | Created modification history log |
 | 2026-01-12 | `ww_custom/doc/` | Reorganized documentation: Moved reference docs to `reference/` folder |
+| 2026-01-17 | `ww_custom/objective/LOCAL_LLM_ADAPTATION_STRATEGY.md` | Created comprehensive strategy for Local LLM adaptation |
+| 2026-01-17 | `ww_custom/scripts/benchmark_models.py` | Created script for benchmarking Local LLMs via Ollama |
+| 2026-01-17 | `ww_custom/doc/benchmarks/` | Added benchmark results for Qwen, DeepSeek, and GPT-OSS |
+| 2026-01-17 | `ww_custom/doc/TEST_RECORDS.md` | Recorded benchmark outcomes and model comparisons |
+| 2026-01-17 | `ww_custom/README.md` | Updated roadmap with Local LLM Adaptation phases |

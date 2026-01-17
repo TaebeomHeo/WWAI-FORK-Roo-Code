@@ -44,5 +44,12 @@
 2.  **Refinement**:
     *   [ ] Gather feedback on prompt quality and MCP tool performance.
     *   [ ] Enhance MCP tools (e.g., support for more complex TC formats, Excel export).
-3.  **Expansion**:
+3.  **Local LLM Adaptation Strategy** (New Priority):
+    *   **Goal**: Enable high-performance agentic workflows on Local LLMs (e.g., Qwen 2.5 Coder 32B).
+    *   [x] **Strategy Definition**: Defined 3-Layer Architecture & Validation Pipeline (`ww_custom/objective/LOCAL_LLM_ADAPTATION_STRATEGY.md`).
+    *   [ ] **Phase 0 (Benchmarking)**: Evaluate candidate models (Qwen 2.5 Coder 32B, DeepSeek-V3) to establish baseline.
+    *   [ ] **Phase 1 (Infrastructure)**: Create "Lite" modes and optimized prompts (`manual-test-engineer-lite.json`).
+    *   [ ] **Phase 2 (Validation)**: Build `validate_syntax.py` and Context Retention test scripts.
+    *   [ ] **Phase 3 (Automation)**: Implement "Architect-Coder" Handoff workflow.
+4.  **Expansion**:
     *   [ ] Add more custom modes (e.g., "Security Auditor", "Legacy Code Analyst").

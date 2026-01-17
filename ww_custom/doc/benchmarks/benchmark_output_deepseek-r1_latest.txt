@@ -1,0 +1,52 @@
+Model: deepseek-r1:latest
+Time: 31.76s
+----------------------------------------
+# E-Commerce Login Test Cases
+
+## QA Process Checklist
+```
+update_todo_list = [
+    "[ ] Analyze Requirements",
+    "[ ✓ ] Plan TCs",
+    "[ ✓ ] Draft TCs",
+    "[ ] Review & Refine",
+    "[ ] Finalize & Save"
+]
+```
+Current Status: **Drafting TCs**
+
+---
+
+## Requirement Analysis
+- **System Under Test**: E-Commerce Login System
+- **Test Scope**:
+  - User authentication flow
+  - Login form validation
+  - Session management
+  - Error handling
+  - Security aspects
+  - Responsive behavior across devices
+
+---
+
+## Test Case Table
+
+| TC_ID | Title                      | Pre-condition                                      | Steps                                                                 | Expected Result                                                                 | Priority |
+|-------|----------------------------|---------------------------------------------------|----------------------------------------------------------------------|--------------------------------------------------------------------------------|----------|
+| TC-001| Successful Login           | User is registered and knows valid credentials     | 1. Navigate to login page<br>2. Enter valid email & password<br>3. Click "Login" | 1. User is redirected to homepage<br>2. Login session is established | High     |
+| TC-002| Login with Empty Fields    | User has internet access, browser default settings | 1. Navigate to login page<br>2. Leave email & password empty<br>3. Click "Login" | 1. Error message: "Email and password are required" | High     |
+| TC-003| Login with Invalid Credentials | User knows valid credentials                     | 1. Navigate to login page<br>2. Enter valid email & invalid password<br>3. Click "Login" | 1. Error message: "Invalid credentials" | High     |
+| TC-004| Login with Incorrect Email  | User knows valid password                          | 1. Navigate to login page<br>2. Enter invalid email & valid password<br>3. Click "Login" | 1. Error message: "Invalid credentials" | High     |
+| TC-005| Case-insensitive Login     | User knows valid credentials                       | 1. Navigate to login page<br>2. Enter valid email (mixed case) & valid password<br>3. Click "Login" | 1. Login is successful | Medium   |
+| TC-006| Password with Special Characters | User knows valid credentials                    | 1. Navigate to login page<br>2. Enter valid email & password with special characters<br>3. Click "Login" | 1. Login is successful | Medium   |
+| TC-007| Forgot Password Flow       | User is registered, hasn't logged in recently     | 1. Navigate to login page<br>2. Click "Forgot Password"<br>3. Enter valid email | 1. Reset password instructions sent to email | Medium   |
+| TC-008| Login with XSS Attack      | User knows valid credentials (for security testing)| 1. Navigate to login page<br>2. Enter XSS payload in email field<br>3. Click "Login" | 1. Error message displayed without executing script<br>2. No security breach | Low      |
+| TC-009| Login with SQL Injection    | User knows valid credentials (for security testing)| 1. Navigate to login page<br>2. Enter SQL injection payload in password field<br>3. Click "Login" | 1. Error message displayed without executing script<br>2. No security breach | Low      |
+| TC-010| Responsive Login Page      | Various device sizes (mobile, tablet, desktop)    | 1. Navigate to login page on mobile device<br>2. Verify page layout<br>3. Repeat for tablet/desktop | 1. Form elements properly sized and functional on all devices | Medium   |
+| TC-011| Login with Zero Width Space | User knows valid credentials (for security testing)| 1. Navigate to login page<br>2. Enter valid email with zero width space<br>3. Click "Login" | 1. Login should still work or display appropriate error | Low      |
+| TC-012| Login with International Characters | User knows valid credentials (for security testing)| 1. Navigate to login page<br>2. Enter email with international characters<br>3. Click "Login" | 1. Login is successful without encoding issues | Low      |
+
+---
+
+## Next Step
+Please review the test cases above. If approved, I'll finalize and save them.

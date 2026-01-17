@@ -99,4 +99,34 @@
 
 | Date | Tester | Result | Note |
 |------|--------|--------|------|
-| 2026-01-12 | Antigravity | Pass | Automated script passed. |
+
+---
+
+## 4. Test: Manual Test Engineer Mode - Local LLM vs Cloud LLM Performance
+
+- **관련 파일**: `ww_custom/modes/manual-test-engineer/manual-test-engineer.json`
+- **테스트 목적**: 동일한 프롬프트("로그인 테스트케이스 짜줘")에 대해 로컬 LLM(gpt-022:20b)과 클라우드 LLM(Claude Sonnet)의 응답 품질 및 지침 준수 여부 비교.
+
+### 📋 Test Procedure (테스트 절차)
+1. **설정**:
+   - `manual-test-engineer.json` 모드 활성화.
+   - Provider를 `Ollama` (gpt-022:20b)로 설정하여 1차 테스트.
+   - Provider를 `Anthropic` (Claude 3.5 Sonnet)로 설정하여 2차 테스트.
+2. **입력**: "이커머스 로그인 관련 테스트케이스 만들어줘."
+3. **평가 기준**:
+   - `customInstructions` 내의 Workflow(상태 업데이트, 포맷) 준수 여부.
+   - 도구 호출 (`check_tc_config` 등)의 정확성.
+   - 추론의 깊이 (단순 나열 vs 엣지 케이스 고려).
+
+### 🧪 Test Results (테스트 결과)
+
+| Date       | Tester      | Model              | Result | Note                                                                 |
+|------------|-------------|--------------------|--------|----------------------------------------------------------------------|
+| 2026-01-17 | Antigravity | gpt-022:20b (Local)| Fail   | 지침 무시(상태 업데이트 누락), 도구 호출 실패, 단순 패턴 매칭 수준. |
+| 2026-01-17 | Antigravity | Claude 3.5 Sonnet  | Pass   | 지침 완벽 준수, 엣지 케이스까지 추론하여 제안함.                     |
+| 2026-01-17 | Antigravity | qwen3-coder:latest | Pass   | **Best Alignment**. Workflow(Status Update) 지침을 완벽하게 수행. Mandatory Field 준수. Lockout 등 엣지 케이스 포함. |
+| 2026-01-17 | Antigravity | deepseek-r1:latest | Pass   | **Best Reasoning**. 보안(XSS/SQLi) 및 특수 문자(Zero Width Space) 등 심층적인 엣지 케이스 도출 능력 우수. Workflow 상태 관리도 양호함. |
+| 2026-01-17 | Antigravity | gpt-oss:20b        | Pass   | Workflow 준수함. SQLi/XSS 등 보안 케이스 포함. 단, 응답 속도가 경쟁 모델 대비 20~30% 느림 (38s). |
+
+> **Conclusion**: `qwen3-coder`는 프로세스 준수(Agentic Workflow)에 강점이 있고, `deepseek-r1`은 창의적/기술적 추론(Reasoning)에 강점이 있음. Lite 모드에서는 이 두 모델을 1차 타겟으로 함.
+

@@ -1,0 +1,73 @@
+Model: gpt-oss:20b
+Time: 38.33s
+----------------------------------------
+## ✅ Todo List  
+`update_todo_list`  
+```
+[ ] Analyze Requirements  
+[ ] Plan TCs  
+[ ] Draft TCs  
+[ ] Review & Refine  
+[ ] Finalize & Save
+```
+
+---
+
+## 📌 Status Update  
+**Analyzing inputs** – The user requested “이커머스 로그인 관련 테스트케이스 만들어줘.”  
+(English: “Create test cases for e‑commerce login.”)
+
+---
+
+## 📄 Requirement Summary  
+The requirement is to design test cases that validate the login functionality of an e‑commerce platform.  
+Assumptions (based on typical e‑commerce login flows):
+
+1. **Login Page** – Contains fields for *Email/Username* and *Password*, a *Login* button, and links for *Forgot Password* and *Register*.
+2. **Authentication** – Supports email/password login only (no social logins).
+3. **Validation Rules**  
+   - Email must be in a valid format.  
+   - Password must be at least 8 characters.  
+   - Both fields are mandatory.  
+4. **Error Messages** – Specific messages for invalid credentials, empty fields, and incorrect format.  
+5. **Security** – Password is masked; no auto‑fill.  
+6. **Post‑Login** – Successful login redirects to the user’s dashboard or the last visited page.
+
+---
+
+## 🎯 Test Scope  
+- **Positive scenarios**: Valid login, login with previously saved credentials, login after registration.  
+- **Negative scenarios**: Empty fields, invalid email format, short password, incorrect credentials, password masking, login page layout.  
+- **Edge cases**: Extremely long input strings, special characters, SQL injection attempt, XSS attempt.  
+- **Security & usability**: Password visibility toggle, error message clarity, redirect behavior.
+
+---
+
+## 📋 Test Cases Draft (Markdown Table)
+
+| TC_ID | Title | Pre‑condition | Steps | Expected Result | Priority |
+|-------|-------|---------------|-------|-----------------|----------|
+| TC_LOGIN_01 | Successful login with valid credentials | User has a registered account | 1. Navigate to `/login`. <br>2. Enter registered email. <br>3. Enter correct password. <br>4. Click “Login”. | User is redirected to the dashboard. Welcome message displays. | High |
+| TC_LOGIN_02 | Login after registration | User has just registered and is on the registration success page | 1. Click “Login” link on the registration success page. <br>2. Enter new credentials. <br>3. Click “Login”. | User lands on dashboard. | High |
+| TC_LOGIN_03 | Password masking | User is on login page | 1. Type any password. <br>2. Observe the password field. | Password characters are masked (e.g., `••••••••`). | High |
+| TC_LOGIN_04 | Empty email field | User is on login page | 1. Leave email field blank. <br>2. Enter a valid password. <br>3. Click “Login”. | Error message: “Email is required.” | Medium |
+| TC_LOGIN_05 | Empty password field | User is on login page | 1. Enter a valid email. <br>2. Leave password field blank. <br>3. Click “Login”. | Error message: “Password is required.” | Medium |
+| TC_LOGIN_06 | Invalid email format | User is on login page | 1. Enter `userexample.com`. <br>2. Enter any password. <br>3. Click “Login”. | Error message: “Please enter a valid email address.” | Medium |
+| TC_LOGIN_07 | Password shorter than 8 chars | User is on login page | 1. Enter a valid email. <br>2. Enter `1234567`. <br>3. Click “Login”. | Error message: “Password must be at least 8 characters.” | Medium |
+| TC_LOGIN_08 | Incorrect credentials | User is on login page | 1. Enter valid email. <br>2. Enter wrong password. <br>3. Click “Login”. | Error message: “Invalid email or password.” | High |
+| TC_LOGIN_09 | Excessively long input strings | User is on login page | 1. Enter an email with 300 characters. <br>2. Enter a password with 300 characters. <br>3. Click “Login”. | System should handle input gracefully (e.g., truncate or reject) and display “Invalid email or password.” | Low |
+| TC_LOGIN_10 | SQL injection attempt | User is on login page | 1. Enter email: `admin' OR '1'='1`. <br>2. Enter any password. <br>3. Click “Login”. | Login fails; no data breach. Error message: “Invalid email or password.” | High |
+| TC_LOGIN_11 | XSS attempt in email field | User is on login page | 1. Enter email: `<script>alert('XSS')</script>`. <br>2. Enter any password. <br>3. Click “Login”. | No script execution; login fails. Error message: “Invalid email or password.” | High |
+| TC_LOGIN_12 | Forgot Password link navigation | User is on login page | 1. Click “Forgot Password?”. | Redirects to password reset page with proper URL. | Medium |
+| TC_LOGIN_13 | Register link navigation | User is on login page | 1. Click “Register”. | Redirects to registration page. | Medium |
+| TC_LOGIN_14 | Redirect after login to last visited page | User is on a product page, clicks “Login” | 1. Click “Login”. <br>2. Enter valid credentials. <br>3. Click “Login”. | User returns to the product page after successful login. | High |
+| TC_LOGIN_15 | Session persistence after login | User logs in, then closes and reopens browser | 1. Log in successfully. <br>2. Close browser. <br>3. Reopen browser and navigate to site. | User remains logged in (session cookie valid). | Medium |
+
+---
+
+## 📢 Next Steps  
+- **Review**: Please review the test cases above.  
+- **Feedback**: Add any missing scenarios, adjust priorities, or clarify steps.  
+- **Approval**: Once approved, I will use `save_new_tc` to persist the file.  
+
+Let me know if you'd like any modifications!
