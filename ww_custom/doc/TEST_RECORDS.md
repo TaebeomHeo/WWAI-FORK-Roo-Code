@@ -13,16 +13,23 @@
 ### 📋 Test Procedure (테스트 절차)
 1.  **준비/설치 (Setup)**:
     - 이 기능은 소스 코드(`src/`) 변경 사항입니다.
+    - **⚠️ 중요**: 기존에 마켓플레이스에서 설치한 Roo Code 확장이 있다면 **충돌 가능성**이 있습니다.
+        - **권장**: 기존 확장 **제거(Uninstall)** 또는 **비활성화(Disable)** 후 진행.
+        - VSIX 설치 시 덮어쓰기가 되기도 하지만, 확실한 검증을 위해 클린 설치를 권장합니다.
     - **VSIX 빌드 및 설치**:
         ```bash
-        # 1. 의존성 설치 (최초 1회만 수행하면 됨)
+        # 1. 터미널 위치: 프로젝트 최상위 폴더 (WWAI-FORK-Roo-Code)
+        
+        # 2. 의존성 설치
         pnpm install
         
-        # 2. 패키징 (VSIX 파일 생성)
-        pnpm package
+        # 3. 패키징 실행 (명령어 수정됨)
+        pnpm vsix
         
-        # 3. 설치: VSC Extensions 메뉴(...) -> 'Install from VSIX' -> 생성된 파일 선택
+        # 4. 생성 위치: 프로젝트 루트의 `bin/` 폴더
+        #    파일명 예: `roo-cline-3.39.1.vsix`
         ```
+    - **설치 방법**: VSC Extensions 메뉴(...) -> 'Install from VSIX' -> `bin/` 폴더 내의 파일 선택.
     - 설치 후 **Reload Window** 필수.
 
 2.  **초기 상태 진입**:

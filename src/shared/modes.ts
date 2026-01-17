@@ -82,8 +82,8 @@ export function getAllModes(customModes?: ModeConfig[]): ModeConfig[] {
 			// Override existing mode
 			allModes[index] = customMode
 		} else {
-			// Add new mode
-			allModes.push(customMode)
+			// Add new mode to the beginning
+			allModes.unshift(customMode)
 		}
 	})
 
