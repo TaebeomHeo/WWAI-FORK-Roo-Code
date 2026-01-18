@@ -130,3 +130,15 @@
 
 > **Conclusion**: `qwen3-coder`는 프로세스 준수(Agentic Workflow)에 강점이 있고, `deepseek-r1`은 창의적/기술적 추론(Reasoning)에 강점이 있음. Lite 모드에서는 이 두 모델을 1차 타겟으로 함.
 
+### 📊 Detailed Analysis (Evaluation Rationale)
+
+1.  **Qwen 3 Coder (Process Compliance)**
+    *   **Instruction Alignment**: `Status Update` 지침을 헤더(`## QA Process Status...`)로 명확히 출력하며 워크플로우를 완벽히 준수함.
+    *   **Standard Coverage**: Empty Field, Lockout 등 표준적인 QA 시나리오를 빠짐없이 커버함.
+    *   *Verdict*: 정해진 절차를 따르는 **Execution Layer**에 최적.
+
+2.  **DeepSeek R1 (Creative Reasoning)**
+    *   **Deep Reasoning**: "Zero Width Space Injection(보이지 않는 공백 주입)", "International Characters" 등 단순 지침에는 없던 **심층적인 엣지 케이스**를 스스로 도출함.
+    *   **Tool Understanding**: 텍스트 환경임에도 가상의 도구 실행(`[ ✓ ] Plan TCs`)을 시뮬레이션하여 논리적 흐름을 유지함.
+    *   *Verdict*: 결함을 탐색하고 계획을 수립하는 **Planning Layer**에 최적.
+

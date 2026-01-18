@@ -1,0 +1,802 @@
+[
+  {
+    "id": "QA-IF-JSON-001",
+    "category": "Instruction Following",
+    "domain": "Social Media (Feed, Privacy, UGC)",
+    "description": "Strict JSON Generation",
+    "prompt": "You are a QA Engineer in the Social Media (Feed, Privacy, UGC) domain. Generate 3 Test Cases for 'Search Filter'. \nOutput MUST be a strictly valid JSON array. Schema: [{'id': 'TC_xxx', 'title': '...', 'steps': [...]}]. \nDo NOT include markdown blocks.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-GHERKIN-002",
+    "category": "Instruction Following",
+    "domain": "Enterprise ERP (HR, Inventory, Reporting)",
+    "description": "Gherkin Syntax Generation",
+    "prompt": "Write a Gherkin (Cucumber) feature file for Enterprise ERP (HR, Inventory, Reporting) - Add to Cart. \nInclude Scenario Outline with Examples. \nUse strictly valid Gherkin syntax.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-CSV-003",
+    "category": "Instruction Following",
+    "domain": "Enterprise ERP (HR, Inventory, Reporting)",
+    "description": "CSV Format Conversion",
+    "prompt": "Convert the following requirements for Enterprise ERP (HR, Inventory, Reporting) into a CSV format with columns: RequirementID, Description, Priority. \nRequirements: User must be able to Update Firmware. User must receive email notification. \nOutput raw CSV only.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-CSV-004",
+    "category": "Instruction Following",
+    "domain": "E-commerce (Checkout, Search, Cart)",
+    "description": "CSV Format Conversion",
+    "prompt": "Convert the following requirements for E-commerce (Checkout, Search, Cart) into a CSV format with columns: RequirementID, Description, Priority. \nRequirements: User must be able to Share Post. User must receive email notification. \nOutput raw CSV only.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-CSV-005",
+    "category": "Instruction Following",
+    "domain": "Enterprise ERP (HR, Inventory, Reporting)",
+    "description": "CSV Format Conversion",
+    "prompt": "Convert the following requirements for Enterprise ERP (HR, Inventory, Reporting) into a CSV format with columns: RequirementID, Description, Priority. \nRequirements: User must be able to Reset Password. User must receive email notification. \nOutput raw CSV only.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-GHERKIN-006",
+    "category": "Instruction Following",
+    "domain": "Social Media (Feed, Privacy, UGC)",
+    "description": "Gherkin Syntax Generation",
+    "prompt": "Write a Gherkin (Cucumber) feature file for Social Media (Feed, Privacy, UGC) - Money Transfer. \nInclude Scenario Outline with Examples. \nUse strictly valid Gherkin syntax.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-GHERKIN-007",
+    "category": "Instruction Following",
+    "domain": "Enterprise ERP (HR, Inventory, Reporting)",
+    "description": "Gherkin Syntax Generation",
+    "prompt": "Write a Gherkin (Cucumber) feature file for Enterprise ERP (HR, Inventory, Reporting) - Friend Request. \nInclude Scenario Outline with Examples. \nUse strictly valid Gherkin syntax.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-CSV-008",
+    "category": "Instruction Following",
+    "domain": "IoT (Device Pairing, Firmware Update, Data Sync)",
+    "description": "CSV Format Conversion",
+    "prompt": "Convert the following requirements for IoT (Device Pairing, Firmware Update, Data Sync) into a CSV format with columns: RequirementID, Description, Priority. \nRequirements: User must be able to Generate Report. User must receive email notification. \nOutput raw CSV only.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-GHERKIN-009",
+    "category": "Instruction Following",
+    "domain": "Healthcare (Patient Record, HIPAA, Appointment)",
+    "description": "Gherkin Syntax Generation",
+    "prompt": "Write a Gherkin (Cucumber) feature file for Healthcare (Patient Record, HIPAA, Appointment) - Friend Request. \nInclude Scenario Outline with Examples. \nUse strictly valid Gherkin syntax.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-JSON-010",
+    "category": "Instruction Following",
+    "domain": "IoT (Device Pairing, Firmware Update, Data Sync)",
+    "description": "Strict JSON Generation",
+    "prompt": "You are a QA Engineer in the IoT (Device Pairing, Firmware Update, Data Sync) domain. Generate 3 Test Cases for 'Search Filter'. \nOutput MUST be a strictly valid JSON array. Schema: [{'id': 'TC_xxx', 'title': '...', 'steps': [...]}]. \nDo NOT include markdown blocks.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-CSV-011",
+    "category": "Instruction Following",
+    "domain": "E-commerce (Checkout, Search, Cart)",
+    "description": "CSV Format Conversion",
+    "prompt": "Convert the following requirements for E-commerce (Checkout, Search, Cart) into a CSV format with columns: RequirementID, Description, Priority. \nRequirements: User must be able to Share Post. User must receive email notification. \nOutput raw CSV only.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-GHERKIN-012",
+    "category": "Instruction Following",
+    "domain": "Enterprise ERP (HR, Inventory, Reporting)",
+    "description": "Gherkin Syntax Generation",
+    "prompt": "Write a Gherkin (Cucumber) feature file for Enterprise ERP (HR, Inventory, Reporting) - Schedule Appointment. \nInclude Scenario Outline with Examples. \nUse strictly valid Gherkin syntax.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-JSON-013",
+    "category": "Instruction Following",
+    "domain": "IoT (Device Pairing, Firmware Update, Data Sync)",
+    "description": "Strict JSON Generation",
+    "prompt": "You are a QA Engineer in the IoT (Device Pairing, Firmware Update, Data Sync) domain. Generate 3 Test Cases for 'Data Export'. \nOutput MUST be a strictly valid JSON array. Schema: [{'id': 'TC_xxx', 'title': '...', 'steps': [...]}]. \nDo NOT include markdown blocks.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-JSON-014",
+    "category": "Instruction Following",
+    "domain": "Enterprise ERP (HR, Inventory, Reporting)",
+    "description": "Strict JSON Generation",
+    "prompt": "You are a QA Engineer in the Enterprise ERP (HR, Inventory, Reporting) domain. Generate 3 Test Cases for 'Payment Gateway'. \nOutput MUST be a strictly valid JSON array. Schema: [{'id': 'TC_xxx', 'title': '...', 'steps': [...]}]. \nDo NOT include markdown blocks.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-CSV-015",
+    "category": "Instruction Following",
+    "domain": "Fintech (Payments, KYC, Transfers)",
+    "description": "CSV Format Conversion",
+    "prompt": "Convert the following requirements for Fintech (Payments, KYC, Transfers) into a CSV format with columns: RequirementID, Description, Priority. \nRequirements: User must be able to Reset Password. User must receive email notification. \nOutput raw CSV only.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-CSV-016",
+    "category": "Instruction Following",
+    "domain": "Healthcare (Patient Record, HIPAA, Appointment)",
+    "description": "CSV Format Conversion",
+    "prompt": "Convert the following requirements for Healthcare (Patient Record, HIPAA, Appointment) into a CSV format with columns: RequirementID, Description, Priority. \nRequirements: User must be able to Reset Password. User must receive email notification. \nOutput raw CSV only.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-JSON-017",
+    "category": "Instruction Following",
+    "domain": "Healthcare (Patient Record, HIPAA, Appointment)",
+    "description": "Strict JSON Generation",
+    "prompt": "You are a QA Engineer in the Healthcare (Patient Record, HIPAA, Appointment) domain. Generate 3 Test Cases for 'Search Filter'. \nOutput MUST be a strictly valid JSON array. Schema: [{'id': 'TC_xxx', 'title': '...', 'steps': [...]}]. \nDo NOT include markdown blocks.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-JSON-018",
+    "category": "Instruction Following",
+    "domain": "E-commerce (Checkout, Search, Cart)",
+    "description": "Strict JSON Generation",
+    "prompt": "You are a QA Engineer in the E-commerce (Checkout, Search, Cart) domain. Generate 3 Test Cases for 'Payment Gateway'. \nOutput MUST be a strictly valid JSON array. Schema: [{'id': 'TC_xxx', 'title': '...', 'steps': [...]}]. \nDo NOT include markdown blocks.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-GHERKIN-019",
+    "category": "Instruction Following",
+    "domain": "E-commerce (Checkout, Search, Cart)",
+    "description": "Gherkin Syntax Generation",
+    "prompt": "Write a Gherkin (Cucumber) feature file for E-commerce (Checkout, Search, Cart) - Add to Cart. \nInclude Scenario Outline with Examples. \nUse strictly valid Gherkin syntax.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-JSON-020",
+    "category": "Instruction Following",
+    "domain": "E-commerce (Checkout, Search, Cart)",
+    "description": "Strict JSON Generation",
+    "prompt": "You are a QA Engineer in the E-commerce (Checkout, Search, Cart) domain. Generate 3 Test Cases for 'Data Export'. \nOutput MUST be a strictly valid JSON array. Schema: [{'id': 'TC_xxx', 'title': '...', 'steps': [...]}]. \nDo NOT include markdown blocks.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-GHERKIN-021",
+    "category": "Instruction Following",
+    "domain": "Fintech (Payments, KYC, Transfers)",
+    "description": "Gherkin Syntax Generation",
+    "prompt": "Write a Gherkin (Cucumber) feature file for Fintech (Payments, KYC, Transfers) - Add to Cart. \nInclude Scenario Outline with Examples. \nUse strictly valid Gherkin syntax.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-GHERKIN-022",
+    "category": "Instruction Following",
+    "domain": "Fintech (Payments, KYC, Transfers)",
+    "description": "Gherkin Syntax Generation",
+    "prompt": "Write a Gherkin (Cucumber) feature file for Fintech (Payments, KYC, Transfers) - Money Transfer. \nInclude Scenario Outline with Examples. \nUse strictly valid Gherkin syntax.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-CSV-023",
+    "category": "Instruction Following",
+    "domain": "E-commerce (Checkout, Search, Cart)",
+    "description": "CSV Format Conversion",
+    "prompt": "Convert the following requirements for E-commerce (Checkout, Search, Cart) into a CSV format with columns: RequirementID, Description, Priority. \nRequirements: User must be able to Update Firmware. User must receive email notification. \nOutput raw CSV only.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-GHERKIN-024",
+    "category": "Instruction Following",
+    "domain": "Healthcare (Patient Record, HIPAA, Appointment)",
+    "description": "Gherkin Syntax Generation",
+    "prompt": "Write a Gherkin (Cucumber) feature file for Healthcare (Patient Record, HIPAA, Appointment) - Smart Light Control. \nInclude Scenario Outline with Examples. \nUse strictly valid Gherkin syntax.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-GHERKIN-025",
+    "category": "Instruction Following",
+    "domain": "Fintech (Payments, KYC, Transfers)",
+    "description": "Gherkin Syntax Generation",
+    "prompt": "Write a Gherkin (Cucumber) feature file for Fintech (Payments, KYC, Transfers) - Smart Light Control. \nInclude Scenario Outline with Examples. \nUse strictly valid Gherkin syntax.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-JSON-026",
+    "category": "Instruction Following",
+    "domain": "IoT (Device Pairing, Firmware Update, Data Sync)",
+    "description": "Strict JSON Generation",
+    "prompt": "You are a QA Engineer in the IoT (Device Pairing, Firmware Update, Data Sync) domain. Generate 3 Test Cases for 'Data Export'. \nOutput MUST be a strictly valid JSON array. Schema: [{'id': 'TC_xxx', 'title': '...', 'steps': [...]}]. \nDo NOT include markdown blocks.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-CSV-027",
+    "category": "Instruction Following",
+    "domain": "IoT (Device Pairing, Firmware Update, Data Sync)",
+    "description": "CSV Format Conversion",
+    "prompt": "Convert the following requirements for IoT (Device Pairing, Firmware Update, Data Sync) into a CSV format with columns: RequirementID, Description, Priority. \nRequirements: User must be able to Update Firmware. User must receive email notification. \nOutput raw CSV only.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-CSV-028",
+    "category": "Instruction Following",
+    "domain": "IoT (Device Pairing, Firmware Update, Data Sync)",
+    "description": "CSV Format Conversion",
+    "prompt": "Convert the following requirements for IoT (Device Pairing, Firmware Update, Data Sync) into a CSV format with columns: RequirementID, Description, Priority. \nRequirements: User must be able to Share Post. User must receive email notification. \nOutput raw CSV only.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-JSON-029",
+    "category": "Instruction Following",
+    "domain": "Social Media (Feed, Privacy, UGC)",
+    "description": "Strict JSON Generation",
+    "prompt": "You are a QA Engineer in the Social Media (Feed, Privacy, UGC) domain. Generate 3 Test Cases for 'Data Export'. \nOutput MUST be a strictly valid JSON array. Schema: [{'id': 'TC_xxx', 'title': '...', 'steps': [...]}]. \nDo NOT include markdown blocks.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-GHERKIN-030",
+    "category": "Instruction Following",
+    "domain": "Fintech (Payments, KYC, Transfers)",
+    "description": "Gherkin Syntax Generation",
+    "prompt": "Write a Gherkin (Cucumber) feature file for Fintech (Payments, KYC, Transfers) - Money Transfer. \nInclude Scenario Outline with Examples. \nUse strictly valid Gherkin syntax.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-GHERKIN-031",
+    "category": "Instruction Following",
+    "domain": "IoT (Device Pairing, Firmware Update, Data Sync)",
+    "description": "Gherkin Syntax Generation",
+    "prompt": "Write a Gherkin (Cucumber) feature file for IoT (Device Pairing, Firmware Update, Data Sync) - Schedule Appointment. \nInclude Scenario Outline with Examples. \nUse strictly valid Gherkin syntax.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-GHERKIN-032",
+    "category": "Instruction Following",
+    "domain": "E-commerce (Checkout, Search, Cart)",
+    "description": "Gherkin Syntax Generation",
+    "prompt": "Write a Gherkin (Cucumber) feature file for E-commerce (Checkout, Search, Cart) - Add to Cart. \nInclude Scenario Outline with Examples. \nUse strictly valid Gherkin syntax.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-GHERKIN-033",
+    "category": "Instruction Following",
+    "domain": "Social Media (Feed, Privacy, UGC)",
+    "description": "Gherkin Syntax Generation",
+    "prompt": "Write a Gherkin (Cucumber) feature file for Social Media (Feed, Privacy, UGC) - Smart Light Control. \nInclude Scenario Outline with Examples. \nUse strictly valid Gherkin syntax.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-JSON-034",
+    "category": "Instruction Following",
+    "domain": "Social Media (Feed, Privacy, UGC)",
+    "description": "Strict JSON Generation",
+    "prompt": "You are a QA Engineer in the Social Media (Feed, Privacy, UGC) domain. Generate 3 Test Cases for 'Search Filter'. \nOutput MUST be a strictly valid JSON array. Schema: [{'id': 'TC_xxx', 'title': '...', 'steps': [...]}]. \nDo NOT include markdown blocks.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-GHERKIN-035",
+    "category": "Instruction Following",
+    "domain": "Fintech (Payments, KYC, Transfers)",
+    "description": "Gherkin Syntax Generation",
+    "prompt": "Write a Gherkin (Cucumber) feature file for Fintech (Payments, KYC, Transfers) - Smart Light Control. \nInclude Scenario Outline with Examples. \nUse strictly valid Gherkin syntax.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-JSON-036",
+    "category": "Instruction Following",
+    "domain": "IoT (Device Pairing, Firmware Update, Data Sync)",
+    "description": "Strict JSON Generation",
+    "prompt": "You are a QA Engineer in the IoT (Device Pairing, Firmware Update, Data Sync) domain. Generate 3 Test Cases for 'Login'. \nOutput MUST be a strictly valid JSON array. Schema: [{'id': 'TC_xxx', 'title': '...', 'steps': [...]}]. \nDo NOT include markdown blocks.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-CSV-037",
+    "category": "Instruction Following",
+    "domain": "Enterprise ERP (HR, Inventory, Reporting)",
+    "description": "CSV Format Conversion",
+    "prompt": "Convert the following requirements for Enterprise ERP (HR, Inventory, Reporting) into a CSV format with columns: RequirementID, Description, Priority. \nRequirements: User must be able to View Transaction History. User must receive email notification. \nOutput raw CSV only.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-CSV-038",
+    "category": "Instruction Following",
+    "domain": "Healthcare (Patient Record, HIPAA, Appointment)",
+    "description": "CSV Format Conversion",
+    "prompt": "Convert the following requirements for Healthcare (Patient Record, HIPAA, Appointment) into a CSV format with columns: RequirementID, Description, Priority. \nRequirements: User must be able to Reset Password. User must receive email notification. \nOutput raw CSV only.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-JSON-039",
+    "category": "Instruction Following",
+    "domain": "Healthcare (Patient Record, HIPAA, Appointment)",
+    "description": "Strict JSON Generation",
+    "prompt": "You are a QA Engineer in the Healthcare (Patient Record, HIPAA, Appointment) domain. Generate 3 Test Cases for 'Payment Gateway'. \nOutput MUST be a strictly valid JSON array. Schema: [{'id': 'TC_xxx', 'title': '...', 'steps': [...]}]. \nDo NOT include markdown blocks.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-GHERKIN-040",
+    "category": "Instruction Following",
+    "domain": "Fintech (Payments, KYC, Transfers)",
+    "description": "Gherkin Syntax Generation",
+    "prompt": "Write a Gherkin (Cucumber) feature file for Fintech (Payments, KYC, Transfers) - Friend Request. \nInclude Scenario Outline with Examples. \nUse strictly valid Gherkin syntax.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-CSV-041",
+    "category": "Instruction Following",
+    "domain": "Healthcare (Patient Record, HIPAA, Appointment)",
+    "description": "CSV Format Conversion",
+    "prompt": "Convert the following requirements for Healthcare (Patient Record, HIPAA, Appointment) into a CSV format with columns: RequirementID, Description, Priority. \nRequirements: User must be able to Generate Report. User must receive email notification. \nOutput raw CSV only.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-GHERKIN-042",
+    "category": "Instruction Following",
+    "domain": "Fintech (Payments, KYC, Transfers)",
+    "description": "Gherkin Syntax Generation",
+    "prompt": "Write a Gherkin (Cucumber) feature file for Fintech (Payments, KYC, Transfers) - Add to Cart. \nInclude Scenario Outline with Examples. \nUse strictly valid Gherkin syntax.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-CSV-043",
+    "category": "Instruction Following",
+    "domain": "Healthcare (Patient Record, HIPAA, Appointment)",
+    "description": "CSV Format Conversion",
+    "prompt": "Convert the following requirements for Healthcare (Patient Record, HIPAA, Appointment) into a CSV format with columns: RequirementID, Description, Priority. \nRequirements: User must be able to Share Post. User must receive email notification. \nOutput raw CSV only.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-CSV-044",
+    "category": "Instruction Following",
+    "domain": "Healthcare (Patient Record, HIPAA, Appointment)",
+    "description": "CSV Format Conversion",
+    "prompt": "Convert the following requirements for Healthcare (Patient Record, HIPAA, Appointment) into a CSV format with columns: RequirementID, Description, Priority. \nRequirements: User must be able to Update Firmware. User must receive email notification. \nOutput raw CSV only.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-GHERKIN-045",
+    "category": "Instruction Following",
+    "domain": "Enterprise ERP (HR, Inventory, Reporting)",
+    "description": "Gherkin Syntax Generation",
+    "prompt": "Write a Gherkin (Cucumber) feature file for Enterprise ERP (HR, Inventory, Reporting) - Add to Cart. \nInclude Scenario Outline with Examples. \nUse strictly valid Gherkin syntax.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-GHERKIN-046",
+    "category": "Instruction Following",
+    "domain": "Healthcare (Patient Record, HIPAA, Appointment)",
+    "description": "Gherkin Syntax Generation",
+    "prompt": "Write a Gherkin (Cucumber) feature file for Healthcare (Patient Record, HIPAA, Appointment) - Schedule Appointment. \nInclude Scenario Outline with Examples. \nUse strictly valid Gherkin syntax.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-JSON-047",
+    "category": "Instruction Following",
+    "domain": "E-commerce (Checkout, Search, Cart)",
+    "description": "Strict JSON Generation",
+    "prompt": "You are a QA Engineer in the E-commerce (Checkout, Search, Cart) domain. Generate 3 Test Cases for 'Data Export'. \nOutput MUST be a strictly valid JSON array. Schema: [{'id': 'TC_xxx', 'title': '...', 'steps': [...]}]. \nDo NOT include markdown blocks.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-GHERKIN-048",
+    "category": "Instruction Following",
+    "domain": "Fintech (Payments, KYC, Transfers)",
+    "description": "Gherkin Syntax Generation",
+    "prompt": "Write a Gherkin (Cucumber) feature file for Fintech (Payments, KYC, Transfers) - Smart Light Control. \nInclude Scenario Outline with Examples. \nUse strictly valid Gherkin syntax.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-CSV-049",
+    "category": "Instruction Following",
+    "domain": "Social Media (Feed, Privacy, UGC)",
+    "description": "CSV Format Conversion",
+    "prompt": "Convert the following requirements for Social Media (Feed, Privacy, UGC) into a CSV format with columns: RequirementID, Description, Priority. \nRequirements: User must be able to Reset Password. User must receive email notification. \nOutput raw CSV only.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-IF-JSON-050",
+    "category": "Instruction Following",
+    "domain": "Enterprise ERP (HR, Inventory, Reporting)",
+    "description": "Strict JSON Generation",
+    "prompt": "You are a QA Engineer in the Enterprise ERP (HR, Inventory, Reporting) domain. Generate 3 Test Cases for 'User Profile'. \nOutput MUST be a strictly valid JSON array. Schema: [{'id': 'TC_xxx', 'title': '...', 'steps': [...]}]. \nDo NOT include markdown blocks.",
+    "expected_criteria": "Strict adherence to format"
+  },
+  {
+    "id": "QA-MR-SECURITY-051",
+    "category": "Multistep Reasoning",
+    "domain": "Healthcare (Patient Record, HIPAA, Appointment)",
+    "description": "Security Edge Cases",
+    "prompt": "Design 3 malicious test cases for Healthcare (Patient Record, HIPAA, Appointment) - Admin Panel. \nFocus on OWASP Top 10 vulnerabilities (Injection, Broken Auth, etc.). \nExplain the attack vector.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-SECURITY-052",
+    "category": "Multistep Reasoning",
+    "domain": "Social Media (Feed, Privacy, UGC)",
+    "description": "Security Edge Cases",
+    "prompt": "Design 3 malicious test cases for Social Media (Feed, Privacy, UGC) - API Endpoint. \nFocus on OWASP Top 10 vulnerabilities (Injection, Broken Auth, etc.). \nExplain the attack vector.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-AMBIGUITY-053",
+    "category": "Multistep Reasoning",
+    "domain": "IoT (Device Pairing, Firmware Update, Data Sync)",
+    "description": "Ambiguity Analysis",
+    "prompt": "Analyze this requirement for a IoT (Device Pairing, Firmware Update, Data Sync) system: 'The Sync feature should be fast and easy to use.' \nIdentify 3 critical ambiguities. Explain WHY they are ambiguous.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-AMBIGUITY-054",
+    "category": "Multistep Reasoning",
+    "domain": "E-commerce (Checkout, Search, Cart)",
+    "description": "Ambiguity Analysis",
+    "prompt": "Analyze this requirement for a E-commerce (Checkout, Search, Cart) system: 'The Sync feature should be fast and easy to use.' \nIdentify 3 critical ambiguities. Explain WHY they are ambiguous.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-AMBIGUITY-055",
+    "category": "Multistep Reasoning",
+    "domain": "Fintech (Payments, KYC, Transfers)",
+    "description": "Ambiguity Analysis",
+    "prompt": "Analyze this requirement for a Fintech (Payments, KYC, Transfers) system: 'The Reporting feature should be fast and easy to use.' \nIdentify 3 critical ambiguities. Explain WHY they are ambiguous.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-DATA-056",
+    "category": "Multistep Reasoning",
+    "domain": "Enterprise ERP (HR, Inventory, Reporting)",
+    "description": "Test Data Generation",
+    "prompt": "Generate a comprehensive set of test data for a Username field in a Enterprise ERP (HR, Inventory, Reporting) app. \nInclude: Valid, Invalid, Boundary, Special Characters, and SQL Injection payloads.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-AMBIGUITY-057",
+    "category": "Multistep Reasoning",
+    "domain": "Enterprise ERP (HR, Inventory, Reporting)",
+    "description": "Ambiguity Analysis",
+    "prompt": "Analyze this requirement for a Enterprise ERP (HR, Inventory, Reporting) system: 'The Search feature should be fast and easy to use.' \nIdentify 3 critical ambiguities. Explain WHY they are ambiguous.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-SECURITY-058",
+    "category": "Multistep Reasoning",
+    "domain": "Enterprise ERP (HR, Inventory, Reporting)",
+    "description": "Security Edge Cases",
+    "prompt": "Design 3 malicious test cases for Enterprise ERP (HR, Inventory, Reporting) - Login Form. \nFocus on OWASP Top 10 vulnerabilities (Injection, Broken Auth, etc.). \nExplain the attack vector.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-SECURITY-059",
+    "category": "Multistep Reasoning",
+    "domain": "Social Media (Feed, Privacy, UGC)",
+    "description": "Security Edge Cases",
+    "prompt": "Design 3 malicious test cases for Social Media (Feed, Privacy, UGC) - Comment Section. \nFocus on OWASP Top 10 vulnerabilities (Injection, Broken Auth, etc.). \nExplain the attack vector.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-AMBIGUITY-060",
+    "category": "Multistep Reasoning",
+    "domain": "Healthcare (Patient Record, HIPAA, Appointment)",
+    "description": "Ambiguity Analysis",
+    "prompt": "Analyze this requirement for a Healthcare (Patient Record, HIPAA, Appointment) system: 'The Payment feature should be fast and easy to use.' \nIdentify 3 critical ambiguities. Explain WHY they are ambiguous.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-AMBIGUITY-061",
+    "category": "Multistep Reasoning",
+    "domain": "Enterprise ERP (HR, Inventory, Reporting)",
+    "description": "Ambiguity Analysis",
+    "prompt": "Analyze this requirement for a Enterprise ERP (HR, Inventory, Reporting) system: 'The Reporting feature should be fast and easy to use.' \nIdentify 3 critical ambiguities. Explain WHY they are ambiguous.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-AMBIGUITY-062",
+    "category": "Multistep Reasoning",
+    "domain": "E-commerce (Checkout, Search, Cart)",
+    "description": "Ambiguity Analysis",
+    "prompt": "Analyze this requirement for a E-commerce (Checkout, Search, Cart) system: 'The Payment feature should be fast and easy to use.' \nIdentify 3 critical ambiguities. Explain WHY they are ambiguous.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-SECURITY-063",
+    "category": "Multistep Reasoning",
+    "domain": "Social Media (Feed, Privacy, UGC)",
+    "description": "Security Edge Cases",
+    "prompt": "Design 3 malicious test cases for Social Media (Feed, Privacy, UGC) - Admin Panel. \nFocus on OWASP Top 10 vulnerabilities (Injection, Broken Auth, etc.). \nExplain the attack vector.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-DATA-064",
+    "category": "Multistep Reasoning",
+    "domain": "Fintech (Payments, KYC, Transfers)",
+    "description": "Test Data Generation",
+    "prompt": "Generate a comprehensive set of test data for a Credit Card Number field in a Fintech (Payments, KYC, Transfers) app. \nInclude: Valid, Invalid, Boundary, Special Characters, and SQL Injection payloads.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-DATA-065",
+    "category": "Multistep Reasoning",
+    "domain": "Healthcare (Patient Record, HIPAA, Appointment)",
+    "description": "Test Data Generation",
+    "prompt": "Generate a comprehensive set of test data for a Patient ID field in a Healthcare (Patient Record, HIPAA, Appointment) app. \nInclude: Valid, Invalid, Boundary, Special Characters, and SQL Injection payloads.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-DATA-066",
+    "category": "Multistep Reasoning",
+    "domain": "Enterprise ERP (HR, Inventory, Reporting)",
+    "description": "Test Data Generation",
+    "prompt": "Generate a comprehensive set of test data for a Device Serial field in a Enterprise ERP (HR, Inventory, Reporting) app. \nInclude: Valid, Invalid, Boundary, Special Characters, and SQL Injection payloads.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-SECURITY-067",
+    "category": "Multistep Reasoning",
+    "domain": "IoT (Device Pairing, Firmware Update, Data Sync)",
+    "description": "Security Edge Cases",
+    "prompt": "Design 3 malicious test cases for IoT (Device Pairing, Firmware Update, Data Sync) - File Upload. \nFocus on OWASP Top 10 vulnerabilities (Injection, Broken Auth, etc.). \nExplain the attack vector.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-DATA-068",
+    "category": "Multistep Reasoning",
+    "domain": "Fintech (Payments, KYC, Transfers)",
+    "description": "Test Data Generation",
+    "prompt": "Generate a comprehensive set of test data for a Credit Card Number field in a Fintech (Payments, KYC, Transfers) app. \nInclude: Valid, Invalid, Boundary, Special Characters, and SQL Injection payloads.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-AMBIGUITY-069",
+    "category": "Multistep Reasoning",
+    "domain": "Enterprise ERP (HR, Inventory, Reporting)",
+    "description": "Ambiguity Analysis",
+    "prompt": "Analyze this requirement for a Enterprise ERP (HR, Inventory, Reporting) system: 'The Payment feature should be fast and easy to use.' \nIdentify 3 critical ambiguities. Explain WHY they are ambiguous.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-SECURITY-070",
+    "category": "Multistep Reasoning",
+    "domain": "E-commerce (Checkout, Search, Cart)",
+    "description": "Security Edge Cases",
+    "prompt": "Design 3 malicious test cases for E-commerce (Checkout, Search, Cart) - Login Form. \nFocus on OWASP Top 10 vulnerabilities (Injection, Broken Auth, etc.). \nExplain the attack vector.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-AMBIGUITY-071",
+    "category": "Multistep Reasoning",
+    "domain": "IoT (Device Pairing, Firmware Update, Data Sync)",
+    "description": "Ambiguity Analysis",
+    "prompt": "Analyze this requirement for a IoT (Device Pairing, Firmware Update, Data Sync) system: 'The Sync feature should be fast and easy to use.' \nIdentify 3 critical ambiguities. Explain WHY they are ambiguous.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-SECURITY-072",
+    "category": "Multistep Reasoning",
+    "domain": "E-commerce (Checkout, Search, Cart)",
+    "description": "Security Edge Cases",
+    "prompt": "Design 3 malicious test cases for E-commerce (Checkout, Search, Cart) - Comment Section. \nFocus on OWASP Top 10 vulnerabilities (Injection, Broken Auth, etc.). \nExplain the attack vector.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-AMBIGUITY-073",
+    "category": "Multistep Reasoning",
+    "domain": "Social Media (Feed, Privacy, UGC)",
+    "description": "Ambiguity Analysis",
+    "prompt": "Analyze this requirement for a Social Media (Feed, Privacy, UGC) system: 'The Payment feature should be fast and easy to use.' \nIdentify 3 critical ambiguities. Explain WHY they are ambiguous.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-AMBIGUITY-074",
+    "category": "Multistep Reasoning",
+    "domain": "E-commerce (Checkout, Search, Cart)",
+    "description": "Ambiguity Analysis",
+    "prompt": "Analyze this requirement for a E-commerce (Checkout, Search, Cart) system: 'The Payment feature should be fast and easy to use.' \nIdentify 3 critical ambiguities. Explain WHY they are ambiguous.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-AMBIGUITY-075",
+    "category": "Multistep Reasoning",
+    "domain": "IoT (Device Pairing, Firmware Update, Data Sync)",
+    "description": "Ambiguity Analysis",
+    "prompt": "Analyze this requirement for a IoT (Device Pairing, Firmware Update, Data Sync) system: 'The Payment feature should be fast and easy to use.' \nIdentify 3 critical ambiguities. Explain WHY they are ambiguous.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-AMBIGUITY-076",
+    "category": "Multistep Reasoning",
+    "domain": "Enterprise ERP (HR, Inventory, Reporting)",
+    "description": "Ambiguity Analysis",
+    "prompt": "Analyze this requirement for a Enterprise ERP (HR, Inventory, Reporting) system: 'The Sync feature should be fast and easy to use.' \nIdentify 3 critical ambiguities. Explain WHY they are ambiguous.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-SECURITY-077",
+    "category": "Multistep Reasoning",
+    "domain": "Fintech (Payments, KYC, Transfers)",
+    "description": "Security Edge Cases",
+    "prompt": "Design 3 malicious test cases for Fintech (Payments, KYC, Transfers) - API Endpoint. \nFocus on OWASP Top 10 vulnerabilities (Injection, Broken Auth, etc.). \nExplain the attack vector.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-DATA-078",
+    "category": "Multistep Reasoning",
+    "domain": "E-commerce (Checkout, Search, Cart)",
+    "description": "Test Data Generation",
+    "prompt": "Generate a comprehensive set of test data for a Device Serial field in a E-commerce (Checkout, Search, Cart) app. \nInclude: Valid, Invalid, Boundary, Special Characters, and SQL Injection payloads.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-SECURITY-079",
+    "category": "Multistep Reasoning",
+    "domain": "Enterprise ERP (HR, Inventory, Reporting)",
+    "description": "Security Edge Cases",
+    "prompt": "Design 3 malicious test cases for Enterprise ERP (HR, Inventory, Reporting) - File Upload. \nFocus on OWASP Top 10 vulnerabilities (Injection, Broken Auth, etc.). \nExplain the attack vector.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-DATA-080",
+    "category": "Multistep Reasoning",
+    "domain": "Social Media (Feed, Privacy, UGC)",
+    "description": "Test Data Generation",
+    "prompt": "Generate a comprehensive set of test data for a Device Serial field in a Social Media (Feed, Privacy, UGC) app. \nInclude: Valid, Invalid, Boundary, Special Characters, and SQL Injection payloads.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-AMBIGUITY-081",
+    "category": "Multistep Reasoning",
+    "domain": "E-commerce (Checkout, Search, Cart)",
+    "description": "Ambiguity Analysis",
+    "prompt": "Analyze this requirement for a E-commerce (Checkout, Search, Cart) system: 'The Sync feature should be fast and easy to use.' \nIdentify 3 critical ambiguities. Explain WHY they are ambiguous.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-SECURITY-082",
+    "category": "Multistep Reasoning",
+    "domain": "IoT (Device Pairing, Firmware Update, Data Sync)",
+    "description": "Security Edge Cases",
+    "prompt": "Design 3 malicious test cases for IoT (Device Pairing, Firmware Update, Data Sync) - API Endpoint. \nFocus on OWASP Top 10 vulnerabilities (Injection, Broken Auth, etc.). \nExplain the attack vector.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-SECURITY-083",
+    "category": "Multistep Reasoning",
+    "domain": "Social Media (Feed, Privacy, UGC)",
+    "description": "Security Edge Cases",
+    "prompt": "Design 3 malicious test cases for Social Media (Feed, Privacy, UGC) - Comment Section. \nFocus on OWASP Top 10 vulnerabilities (Injection, Broken Auth, etc.). \nExplain the attack vector.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-AMBIGUITY-084",
+    "category": "Multistep Reasoning",
+    "domain": "Fintech (Payments, KYC, Transfers)",
+    "description": "Ambiguity Analysis",
+    "prompt": "Analyze this requirement for a Fintech (Payments, KYC, Transfers) system: 'The Sync feature should be fast and easy to use.' \nIdentify 3 critical ambiguities. Explain WHY they are ambiguous.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-SECURITY-085",
+    "category": "Multistep Reasoning",
+    "domain": "Fintech (Payments, KYC, Transfers)",
+    "description": "Security Edge Cases",
+    "prompt": "Design 3 malicious test cases for Fintech (Payments, KYC, Transfers) - API Endpoint. \nFocus on OWASP Top 10 vulnerabilities (Injection, Broken Auth, etc.). \nExplain the attack vector.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-AMBIGUITY-086",
+    "category": "Multistep Reasoning",
+    "domain": "Fintech (Payments, KYC, Transfers)",
+    "description": "Ambiguity Analysis",
+    "prompt": "Analyze this requirement for a Fintech (Payments, KYC, Transfers) system: 'The Payment feature should be fast and easy to use.' \nIdentify 3 critical ambiguities. Explain WHY they are ambiguous.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-AMBIGUITY-087",
+    "category": "Multistep Reasoning",
+    "domain": "Social Media (Feed, Privacy, UGC)",
+    "description": "Ambiguity Analysis",
+    "prompt": "Analyze this requirement for a Social Media (Feed, Privacy, UGC) system: 'The Sync feature should be fast and easy to use.' \nIdentify 3 critical ambiguities. Explain WHY they are ambiguous.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-AMBIGUITY-088",
+    "category": "Multistep Reasoning",
+    "domain": "Fintech (Payments, KYC, Transfers)",
+    "description": "Ambiguity Analysis",
+    "prompt": "Analyze this requirement for a Fintech (Payments, KYC, Transfers) system: 'The Upload feature should be fast and easy to use.' \nIdentify 3 critical ambiguities. Explain WHY they are ambiguous.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-SECURITY-089",
+    "category": "Multistep Reasoning",
+    "domain": "Social Media (Feed, Privacy, UGC)",
+    "description": "Security Edge Cases",
+    "prompt": "Design 3 malicious test cases for Social Media (Feed, Privacy, UGC) - Login Form. \nFocus on OWASP Top 10 vulnerabilities (Injection, Broken Auth, etc.). \nExplain the attack vector.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-SECURITY-090",
+    "category": "Multistep Reasoning",
+    "domain": "Healthcare (Patient Record, HIPAA, Appointment)",
+    "description": "Security Edge Cases",
+    "prompt": "Design 3 malicious test cases for Healthcare (Patient Record, HIPAA, Appointment) - Admin Panel. \nFocus on OWASP Top 10 vulnerabilities (Injection, Broken Auth, etc.). \nExplain the attack vector.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-SECURITY-091",
+    "category": "Multistep Reasoning",
+    "domain": "E-commerce (Checkout, Search, Cart)",
+    "description": "Security Edge Cases",
+    "prompt": "Design 3 malicious test cases for E-commerce (Checkout, Search, Cart) - Comment Section. \nFocus on OWASP Top 10 vulnerabilities (Injection, Broken Auth, etc.). \nExplain the attack vector.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-SECURITY-092",
+    "category": "Multistep Reasoning",
+    "domain": "IoT (Device Pairing, Firmware Update, Data Sync)",
+    "description": "Security Edge Cases",
+    "prompt": "Design 3 malicious test cases for IoT (Device Pairing, Firmware Update, Data Sync) - File Upload. \nFocus on OWASP Top 10 vulnerabilities (Injection, Broken Auth, etc.). \nExplain the attack vector.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-SECURITY-093",
+    "category": "Multistep Reasoning",
+    "domain": "Fintech (Payments, KYC, Transfers)",
+    "description": "Security Edge Cases",
+    "prompt": "Design 3 malicious test cases for Fintech (Payments, KYC, Transfers) - Admin Panel. \nFocus on OWASP Top 10 vulnerabilities (Injection, Broken Auth, etc.). \nExplain the attack vector.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-SECURITY-094",
+    "category": "Multistep Reasoning",
+    "domain": "IoT (Device Pairing, Firmware Update, Data Sync)",
+    "description": "Security Edge Cases",
+    "prompt": "Design 3 malicious test cases for IoT (Device Pairing, Firmware Update, Data Sync) - File Upload. \nFocus on OWASP Top 10 vulnerabilities (Injection, Broken Auth, etc.). \nExplain the attack vector.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-AMBIGUITY-095",
+    "category": "Multistep Reasoning",
+    "domain": "E-commerce (Checkout, Search, Cart)",
+    "description": "Ambiguity Analysis",
+    "prompt": "Analyze this requirement for a E-commerce (Checkout, Search, Cart) system: 'The Sync feature should be fast and easy to use.' \nIdentify 3 critical ambiguities. Explain WHY they are ambiguous.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-AMBIGUITY-096",
+    "category": "Multistep Reasoning",
+    "domain": "Fintech (Payments, KYC, Transfers)",
+    "description": "Ambiguity Analysis",
+    "prompt": "Analyze this requirement for a Fintech (Payments, KYC, Transfers) system: 'The Reporting feature should be fast and easy to use.' \nIdentify 3 critical ambiguities. Explain WHY they are ambiguous.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-DATA-097",
+    "category": "Multistep Reasoning",
+    "domain": "Fintech (Payments, KYC, Transfers)",
+    "description": "Test Data Generation",
+    "prompt": "Generate a comprehensive set of test data for a Credit Card Number field in a Fintech (Payments, KYC, Transfers) app. \nInclude: Valid, Invalid, Boundary, Special Characters, and SQL Injection payloads.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-AMBIGUITY-098",
+    "category": "Multistep Reasoning",
+    "domain": "Enterprise ERP (HR, Inventory, Reporting)",
+    "description": "Ambiguity Analysis",
+    "prompt": "Analyze this requirement for a Enterprise ERP (HR, Inventory, Reporting) system: 'The Search feature should be fast and easy to use.' \nIdentify 3 critical ambiguities. Explain WHY they are ambiguous.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-AMBIGUITY-099",
+    "category": "Multistep Reasoning",
+    "domain": "IoT (Device Pairing, Firmware Update, Data Sync)",
+    "description": "Ambiguity Analysis",
+    "prompt": "Analyze this requirement for a IoT (Device Pairing, Firmware Update, Data Sync) system: 'The Reporting feature should be fast and easy to use.' \nIdentify 3 critical ambiguities. Explain WHY they are ambiguous.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  },
+  {
+    "id": "QA-MR-DATA-100",
+    "category": "Multistep Reasoning",
+    "domain": "Healthcare (Patient Record, HIPAA, Appointment)",
+    "description": "Test Data Generation",
+    "prompt": "Generate a comprehensive set of test data for a Username field in a Healthcare (Patient Record, HIPAA, Appointment) app. \nInclude: Valid, Invalid, Boundary, Special Characters, and SQL Injection payloads.",
+    "expected_criteria": "Depth of reasoning, edge identification"
+  }
+]

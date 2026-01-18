@@ -22,3 +22,7 @@ Tracking of custom modifications made to the Roo Code codebase.
 | 2026-01-17 | `ww_custom/doc/benchmarks/` | Added benchmark results for Qwen, DeepSeek, and GPT-OSS |
 | 2026-01-17 | `ww_custom/doc/TEST_RECORDS.md` | Recorded benchmark outcomes and model comparisons |
 | 2026-01-17 | `ww_custom/README.md` | Updated roadmap with Local LLM Adaptation phases |
+| 2026-01-19 | `ww_custom/benchmark_test/QA_BENCHMARK_GUIDE.md` | Created methodologies for QA Instruction Following & Reasoning alignment |
+| 2026-01-19 | `ww_custom/scripts/generate_dataset.py` | Created script to generate synthetic QA benchmark dataset |
+| 2026-01-19 | `ww_custom/benchmark_test/qa_prompts.json` | Generated 100+ item benchmark dataset across 6 domains |
+| 2026-01-19 | `ww_custom/scripts/run_qa_benchmark.py` | Created automated benchmark execution runner |
