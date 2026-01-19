@@ -26,3 +26,6 @@ Tracking of custom modifications made to the Roo Code codebase.
 | 2026-01-19 | `ww_custom/scripts/generate_dataset.py` | Created script to generate synthetic QA benchmark dataset |
 | 2026-01-19 | `ww_custom/benchmark_test/qa_prompts.json` | Generated 100+ item benchmark dataset across 6 domains |
 | 2026-01-19 | `ww_custom/scripts/run_qa_benchmark.py` | Created automated benchmark execution runner |
+| 2026-01-19 | `ww_custom/scripts/analyze_results.py` | Created script to aggregate and analyze benchmark metrics |
+| 2026-01-19 | `ww_custom/benchmark_test/QA_BENCHMARK_GUIDE.md` | Translated guide to Korean |
+| 2026-01-19 | `ww_custom/benchmark_test/QA_BENCHMARK_REPORT.md` | Translated report to Korean and updated with final 189-sample stats |
