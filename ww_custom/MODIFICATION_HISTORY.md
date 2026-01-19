@@ -29,3 +29,5 @@ Tracking of custom modifications made to the Roo Code codebase.
 | 2026-01-19 | `ww_custom/scripts/analyze_results.py` | Created script to aggregate and analyze benchmark metrics |
 | 2026-01-19 | `ww_custom/benchmark_test/QA_BENCHMARK_GUIDE.md` | Translated guide to Korean |
 | 2026-01-19 | `ww_custom/benchmark_test/QA_BENCHMARK_REPORT.md` | Translated report to Korean and updated with final 189-sample stats |
+| 2026-01-19 | `ww_custom/modes/manual-test-engineer-lite/` | Created Lite mode optimized for Local LLMs (Qwen/DeepSeek) |
+| 2026-01-19 | `.roomodes` | Registered `manual-test-engineer-lite` |
