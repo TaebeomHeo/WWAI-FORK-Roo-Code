@@ -131,7 +131,17 @@ python3 ww_custom/scripts/verify_test_manager.py
     2.  시스템 프롬프트에 One-Shot 예시 강제
     3.  에러 메시지 구체화 (재시도 유도)
 
-### B. Test Engineer 에이전트 개발 목표
+### C. 시스템 프롬프트 최적화 (System Prompt Optimization)
+
+로컬 LLM의 제한된 토큰 처리 능력을 고려하여 시스템 프롬프트를 동적으로 경량화하는 전략입니다.
+
+- **대상 파일**: `src/core/prompts/system.ts` 및 `sections/*.ts`
+- **구현 내용**:
+    - `isLocalModel` 플래그 도입: 모델 ID에 `ollama`, `qwen` 등이 포함되면 True.
+    - **Lite Mode 프롬프트**: `isLiteMode=true`일 경우, `Tool Use Guidelines`와 `Capabilities` 섹션을 대폭 축소하여 핵심만 전달.
+    - **효과**: 시스템 프롬프트 토큰 절약 -> 대화 컨텍스트 확보 -> 응답 품질 향상.
+
+### D. Test Engineer 에이전트 개발 목표
 
 1.  **Test Case 생성**: 요구사항을 분석하여 TC 작성.
 2.  **Test 실행**: 작성된 TC를 바탕으로 코드 실행 및 결과 검증.

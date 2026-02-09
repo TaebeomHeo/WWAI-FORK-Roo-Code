@@ -6,7 +6,17 @@ import { experiments, EXPERIMENT_IDS } from "../../../shared/experiments"
 export function getToolUseGuidelinesSection(
 	protocol: ToolProtocol = TOOL_PROTOCOL.XML,
 	experimentFlags?: Record<string, boolean>,
+	isLiteMode: boolean = false,
 ): string {
+	if (isLiteMode) {
+		return `# Tool Use Guidelines
+
+1. Assess information needs and choose the most appropriate tool.
+2. If multiple actions are needed, use tools iteratively.
+3. Use the tools as described in their definitions.
+4. After each tool use, analyze the result (success/failure, output) to determine the next step.`
+	}
+
 	// Build guidelines array with automatic numbering
 	let itemNumber = 1
 	const guidelinesList: string[] = []

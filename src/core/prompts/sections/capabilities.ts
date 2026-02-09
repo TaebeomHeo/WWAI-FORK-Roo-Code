@@ -1,6 +1,16 @@
 import { McpHub } from "../../../services/mcp/McpHub"
 
-export function getCapabilitiesSection(cwd: string, mcpHub?: McpHub): string {
+export function getCapabilitiesSection(cwd: string, mcpHub?: McpHub, isLiteMode: boolean = false): string {
+	if (isLiteMode) {
+		return `====
+
+CAPABILITIES
+
+- You can execute CLI commands, list files, read/write files, and search.
+- Use \`execute_command\` for CLI operations.
+- Use \`list_files\` to explore directories.`
+	}
+
 	return `====
 
 CAPABILITIES

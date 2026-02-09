@@ -138,17 +138,27 @@ async function generatePrompt(
 
 	const toolsCatalog = builtInToolsCatalog + customToolsSection
 
+	// Detect if we are running in "Lite" mode (Local LLM) to reduce prompt size
+	const isLocalModel = modelId
+		? modelId.toLowerCase().includes("ollama") ||
+			modelId.toLowerCase().includes("lmstudio") ||
+			modelId.toLowerCase().includes("qwen") ||
+			modelId.toLowerCase().includes("llama") ||
+			modelId.toLowerCase().includes("mistral") ||
+			modelId.toLowerCase().includes("phi")
+		: false
+
 	const basePrompt = `${roleDefinition}
 
 ${markdownFormattingSection()}
 
 ${getSharedToolUseSection(effectiveProtocol, experiments)}${toolsCatalog}
 
-${getToolUseGuidelinesSection(effectiveProtocol, experiments)}
+${getToolUseGuidelinesSection(effectiveProtocol, experiments, isLocalModel)}
 
 ${mcpServersSection}
 
-${getCapabilitiesSection(cwd, shouldIncludeMcp ? mcpHub : undefined)}
+${getCapabilitiesSection(cwd, shouldIncludeMcp ? mcpHub : undefined, isLocalModel)}
 
 ${modesSection}
 ${skillsSection ? `\n${skillsSection}` : ""}
