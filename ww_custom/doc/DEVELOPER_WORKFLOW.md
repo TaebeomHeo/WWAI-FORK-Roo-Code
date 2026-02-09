@@ -114,7 +114,14 @@ python3 ww_custom/scripts/verify_test_manager.py
 
 본 프로젝트의 궁극적인 목표는 **"로컬 LLM을 활용한 Test Engineer 에이전트"**를 구축하는 것입니다. 이를 위해 에이전트의 행동을 감시하고, 필요 시 인간이 개입하거나 로직을 수정하는 과정이 포함됩니다.
 
-### A. 에이전트 개입 로직 (Intervention Logic)
+### A. 컨텍스트 관리 및 최적화 (Context Management)
+
+로컬 LLM(8k context)의 한계를 극복하기 위한 전략입니다.
+
+- **참고 문서**: `ww_custom/doc/context_management_analysis/CONTEXT_MANAGEMENT.md`
+- **주요 전략**: `getEnvironmentDetails.ts`에서 로컬 모델 감지 시 파일 목록을 동적으로 축소(200개 -> 50개).
+
+### B. 에이전트 개입 로직 (Intervention Logic)
 
 로컬 LLM이 도구 호출(Tool Calling)에 실패하거나 루프에 빠질 경우를 대비한 분석 및 대응 전략입니다.
 

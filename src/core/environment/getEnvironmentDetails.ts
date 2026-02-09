@@ -34,13 +34,33 @@ export async function getEnvironmentDetails(cline: Task, includeFileDetails: boo
 		maxWorkspaceFiles = 200,
 	} = state ?? {}
 
+	// Optimize for Local LLMs (Context Management "Point B")
+	// If the model is a local model (e.g., Ollama, LM Studio), we drastically reduce the context payload
+	// to prevent the 8k window from being flooded by file lists and terminal output.
+	const currentModelId = cline.api.getModel().id.toLowerCase()
+	const isLocalModel =
+		currentModelId.includes("ollama") ||
+		currentModelId.includes("lmstudio") ||
+		currentModelId.includes("qwen") ||
+		currentModelId.includes("llama") ||
+		currentModelId.includes("mistral") ||
+		currentModelId.includes("phi")
+
+	let effectiveMaxWorkspaceFiles = maxWorkspaceFiles
+	let effectiveTerminalOutputLineLimit = terminalOutputLineLimit
+
+	if (isLocalModel) {
+		effectiveMaxWorkspaceFiles = 50 // Reduce from 200 to 50
+		effectiveTerminalOutputLineLimit = 50 // Reduce from 500 to 50
+	}
+
 	// It could be useful for cline to know if the user went from one or no
 	// file to another between messages, so we always include this context.
 	const visibleFilePaths = vscode.window.visibleTextEditors
 		?.map((editor) => editor.document?.uri?.fsPath)
 		.filter(Boolean)
 		.map((absolutePath) => path.relative(cline.cwd, absolutePath))
-		.slice(0, maxWorkspaceFiles)
+		.slice(0, effectiveMaxWorkspaceFiles)
 
 	// Filter paths through rooIgnoreController
 	const allowedVisibleFiles = cline.rooIgnoreController
