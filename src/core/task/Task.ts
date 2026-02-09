@@ -4129,6 +4129,18 @@ export class Task extends EventEmitter<TaskEvents> implements TaskLike {
 		this.skipPrevResponseIdOnce = false
 
 		// The provider accepts reasoning items alongside standard messages; cast to the expected parameter type.
+
+		// [DEBUG] Log context to Output Channel
+		const provider = this.providerRef.deref()
+		if (provider) {
+			provider.logToOutput(
+				`\n\n--- [Task#${this.taskId}] SYSTEM PROMPT ---\n${systemPrompt}\n-----------------------------------\n`,
+			)
+			provider.logToOutput(
+				`\n--- [Task#${this.taskId}] MESSAGES ---\n${JSON.stringify(cleanConversationHistory, null, 2)}\n-----------------------------------\n`,
+			)
+		}
+
 		const stream = this.api.createMessage(
 			systemPrompt,
 			cleanConversationHistory as unknown as Anthropic.Messages.MessageParam[],

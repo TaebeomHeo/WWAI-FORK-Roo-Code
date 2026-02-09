@@ -13,5 +13,5 @@ def divide(a, b):
     return a / b
 
 def power(a, b):
-    # Intentional Bug: returns base * exponent instead of base ^ exponent
-    return a * b
+    # Fixed: returns base ^ exponent (a ** b)
+    return a ** b

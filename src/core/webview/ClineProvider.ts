@@ -732,7 +732,11 @@ export class ClineProvider
 		}
 	}
 
-	async resolveWebviewView(webviewView: vscode.WebviewView | vscode.WebviewPanel) {
+	public logToOutput(message: string): void {
+		this.outputChannel.appendLine(message)
+	}
+
+	public async resolveWebviewView(webviewView: vscode.WebviewView | vscode.WebviewPanel) {
 		this.view = webviewView
 		const inTabMode = "onDidChangeViewState" in webviewView
 

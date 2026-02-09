@@ -42,6 +42,7 @@ Roo Code의 행동 양식(페르소나)이나 모드별 설정을 바꿀 때 사
 **JSON 파일(프롬프트)**만 수정했을 경우, 빌드 없이 즉시 적용할 수 있습니다.
 
 1.  **파일 복사**: 수정한 JSON 파일을 `.roomodes` 파일로 복사합니다.
+
     - 윈도우/맥/리눅스 공통: 프로젝트 루트의 `.roomodes` 파일 (또는 홈 디렉토리 `~/.roomodes`)
 
     ```bash
@@ -149,3 +150,48 @@ python3 ww_custom/scripts/verify_test_manager.py
     - `TEST_MISSION.md`: 에이전트에게 "이 코드를 테스트해줘"라고 지시할 미션 파일.
 
 ---
+
+## 6. F5 디버깅 & 격리 테스트 (Debugging via Extension Host)
+
+VSIX 패키징 및 재설치 과정 없이, 수정한 코드를 즉시 테스트하고 싶을 때 사용하는 방법입니다.
+
+### A. 디버깅 모드 실행
+
+1.  VS Code 좌측 **Run and Debug** 탭(🐛) 클릭.
+2.  상단 드롭다운에서 **Running Extension** 선택 후 `F5` 또는 `▶` 버튼 클릭.
+3.  **[Extension Development Host]** 라는 이름의 새 VS Code 창이 실행됩니다.
+
+### B. 격리된 테스트 환경 (Isolated Workspace)
+
+**주의**: 원본 프로젝트 폴더(`WWAI-FORK-Roo-Code`)를 디버깅 창에서 또 열면 충돌이 발생할 수 있습니다.
+따라서, 테스트를 위한 별도의 격리된 작업 공간을 사용하는 것을 권장합니다.
+
+1.  **Test Workspace 생성** (최초 1회):
+    ```bash
+    mkdir -p ../test_workspace
+    cp -r ww_custom ../test_workspace/
+    ```
+2.  **폴더 열기**:
+    - F5로 실행된 **[Extension Development Host]** 창에서 `File > Open Folder...` 선택.
+    - 방금 생성한 **`test_workspace`** 폴더를 엽니다.
+3.  **테스트 진행**:
+    - `ww_custom/sandbox/TEST_MISSION.md` 등을 활용하여 에이전트를 테스트합니다.
+    - 소스 코드를 수정하고 싶으면 **원본 창**에서 수정하고 저장하세요.
+
+### C. 설치형 사용자를 위한 재설치 (Re-install via VSIX)
+
+F5 디버깅 모드가 아닌, **평소처럼 VS Code를 사용하며 테스트**하려면 수동 재설치가 필요합니다.
+소스 코드를 수정했다면, 다음 명령어로 확장을 다시 빌드하고 설치해야 합니다.
+
+1.  **재설치 명령어 실행**:
+
+    - VS Code 하단 터미널(`CodeLearning/WWAI-FORK-Roo-Code`)에서 실행:
+
+    ```bash
+    pnpm install:vsix
+    ```
+
+    - 이 명령어는 **`빌드 -> 기존 확장 삭제 -> 새 확장 설치`** 과정을 자동으로 수행합니다.
+
+2.  **VS Code 재시작**:
+    - 설치가 완료되면, **VS Code를 완전히 종료했다가 다시 실행**해야 변경 사항이 적용됩니다. (Reload Window로는 부족할 수 있습니다.)
