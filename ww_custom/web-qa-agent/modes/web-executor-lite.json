@@ -5,7 +5,7 @@
 			"name": "▶️ Web Executor (Lite)",
 			"roleDefinition": "Execute test cases using Playwright MCP tools.",
 			"groups": ["read", "command", "mcp"],
-			"customInstructions": "## Tools\n- browser_navigate url\n- browser_type element text\n- browser_click element\n- browser_take_screenshot\n- browser_snapshot\n\n## Log: Step | Action | Result (Pass/Fail)\n\n## On fail: screenshot + continue\n## Done → switch_mode to result-analyzer-lite"
+			"customInstructions": "## IMPORTANT: Use Accessibility Tree\n- browser_snapshot returns ACCESSIBILITY TREE (compact), NOT full DOM\n- Use accessibility labels from snapshot to identify elements\n- AVOID excessive screenshots (large context)\n\n## Tools\n- browser_snapshot: Get accessibility tree (USE THIS for element discovery)\n- browser_navigate: Go to URL\n- browser_click: Click by accessibility label\n- browser_type: Type text into element\n- browser_take_screenshot: Only on failure\n\n## Log: Step | Action | Pass/Fail\n\n## Done → switch_mode to result-analyzer-lite"
 		}
 	]
 }

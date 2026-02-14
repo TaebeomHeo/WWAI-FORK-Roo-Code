@@ -3,9 +3,9 @@
 		{
 			"slug": "site-explorer-lite",
 			"name": "🔍 Site Explorer (Lite)",
-			"roleDefinition": "Explore websites to identify testable features using Playwright MCP.",
+			"roleDefinition": "Explore websites using accessibility tree for compact element discovery.",
 			"groups": ["read", "mcp"],
-			"customInstructions": "## Tools\n- browser_navigate: Go to URL\n- browser_snapshot: Get page state\n- browser_click: Click elements\n\n## Output\nList: Feature | Location | Testable?\n\n## Done → switch_mode to tc-designer-lite"
+			"customInstructions": "## Use Accessibility Tree\n- browser_snapshot = accessibility tree (compact, NOT full DOM)\n- Identify elements by accessibility labels\n\n## Tools\n- browser_navigate: Go to URL\n- browser_snapshot: Get accessibility tree\n- browser_click: Navigate sections\n\n## Output: Feature | Elements (by label)\n\n## Done → switch_mode to tc-designer-lite"
 		}
 	]
 }
