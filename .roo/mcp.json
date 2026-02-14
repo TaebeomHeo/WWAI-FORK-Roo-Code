@@ -1,12 +1,12 @@
 {
-  "mcpServers": {
-    "mcp-test-manager": {
-      "command": "/home/bombbie/develop/WWAI-FORK-Roo-Code/ww_custom/.venv/bin/python",
-      "args": [
-        "/home/bombbie/develop/WWAI-FORK-Roo-Code/ww_custom/mcp/test-manager/server.py"
-      ],
-      "disabled": false,
-      "autoApprove": []
-    }
-  }
+	"mcpServers": {
+		"mcp-test-manager": {
+			"command": "/home/bombbie/develop/WWAI-FORK-Roo-Code/ww_custom/.venv/bin/python",
+			"args": ["/home/bombbie/develop/WWAI-FORK-Roo-Code/ww_custom/mcp/test-manager/server.py"],
+			"disabled": true,
+			"autoApprove": [],
+			"alwaysAllow": []
+		},
+		"playwright": { "command": "npx", "args": ["@playwright/mcp@latest"], "disabled": false, "autoApprove": [] }
+	}
 }

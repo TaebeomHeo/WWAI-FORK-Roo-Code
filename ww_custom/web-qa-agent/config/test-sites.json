@@ -1,0 +1,55 @@
+{
+	"current_session": {
+		"active_site": "",
+		"test_scope": [],
+		"test_depth": "",
+		"status": "idle",
+		"last_updated": ""
+	},
+	"sites": {
+		"amazon": {
+			"name": "Amazon",
+			"baseUrl": "https://www.amazon.com",
+			"features": ["login", "search", "cart", "checkout", "reviews"],
+			"testAccount": {
+				"email": "test@example.com",
+				"password": "REPLACE_WITH_TEST_PASSWORD"
+			},
+			"selectors": {
+				"loginButton": "#nav-link-accountList",
+				"emailInput": "#ap_email",
+				"passwordInput": "#ap_password",
+				"searchInput": "#twotabsearchtextbox",
+				"searchButton": "#nav-search-submit-button",
+				"addToCartButton": "#add-to-cart-button",
+				"cartIcon": "#nav-cart"
+			}
+		},
+		"demo_store": {
+			"name": "Demo Store (for testing)",
+			"baseUrl": "https://demo.opencart.com",
+			"features": ["login", "search", "cart", "checkout"],
+			"testAccount": {
+				"email": "demo@demo.com",
+				"password": "demo"
+			},
+			"notes": "Free demo e-commerce site for testing purposes"
+		},
+		"ssg": {
+			"name": "SSG.COM",
+			"baseUrl": "https://www.ssg.com",
+			"features": ["login", "search", "cart", "checkout", "membership"],
+			"testAccount": {
+				"email": "YOUR_EMAIL_HERE",
+				"password": "YOUR_PASSWORD_HERE"
+			},
+			"notes": "Korean e-commerce site"
+		}
+	},
+	"default_site": "demo_store",
+	"global_settings": {
+		"timeout_ms": 30000,
+		"screenshot_on_failure": true,
+		"retry_failed_steps": 1
+	}
+}

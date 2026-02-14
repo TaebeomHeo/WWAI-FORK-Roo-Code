@@ -1,0 +1,58 @@
+{
+	"mcpServers": {
+		"playwright": {
+			"command": "npx",
+			"args": ["@playwright/mcp@latest"],
+			"env": {
+				"PLAYWRIGHT_MCP_HEADLESS": "true"
+			}
+		}
+	},
+	"notes": {
+		"description": "Playwright MCP server configuration for Web QA Agent",
+		"installation": "This config should be merged into .roo/mcp.json",
+		"options": {
+			"--headless": "Run browser without GUI (default for CI)",
+			"--no-headless": "Show browser window (for debugging)",
+			"--browser": "chromium | firefox | webkit",
+			"--viewport-size": "e.g., 1280x720",
+			"--device": "e.g., 'iPhone 15' for mobile testing"
+		},
+		"available_tools": [
+			"browser_navigate",
+			"browser_navigate_back",
+			"browser_click",
+			"browser_type",
+			"browser_fill_form",
+			"browser_select_option",
+			"browser_hover",
+			"browser_drag",
+			"browser_snapshot",
+			"browser_take_screenshot",
+			"browser_wait_for",
+			"browser_press_key",
+			"browser_handle_dialog",
+			"browser_file_upload",
+			"browser_console_messages",
+			"browser_network_requests",
+			"browser_evaluate",
+			"browser_tabs",
+			"browser_resize",
+			"browser_close"
+		]
+	},
+	"alternative_configs": {
+		"with_visible_browser": {
+			"command": "npx",
+			"args": ["@playwright/mcp@latest", "--no-headless"]
+		},
+		"firefox": {
+			"command": "npx",
+			"args": ["@playwright/mcp@latest", "--browser", "firefox"]
+		},
+		"mobile_emulation": {
+			"command": "npx",
+			"args": ["@playwright/mcp@latest", "--device", "iPhone 15"]
+		}
+	}
+}
