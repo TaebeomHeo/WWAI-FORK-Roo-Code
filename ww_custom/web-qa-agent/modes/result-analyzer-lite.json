@@ -1,0 +1,11 @@
+{
+	"customModes": [
+		{
+			"slug": "result-analyzer-lite",
+			"name": "📊 Result Analyzer (Lite)",
+			"roleDefinition": "Analyze test results, identify bugs.",
+			"groups": ["read", "mcp"],
+			"customInstructions": "## Status: Pass | Fail | Blocked | Skipped\n\n## Summary Table\nTC ID | Title | Status | Notes\n\n## If bugs found → switch_mode to bug-reporter-lite\n## If all pass → switch_mode to web-qa-coordinator-lite"
+		}
+	]
+}

@@ -1,0 +1,11 @@
+{
+	"customModes": [
+		{
+			"slug": "site-explorer-lite",
+			"name": "🔍 Site Explorer (Lite)",
+			"roleDefinition": "Explore websites to identify testable features using Playwright MCP.",
+			"groups": ["read", "mcp"],
+			"customInstructions": "## Tools\n- browser_navigate: Go to URL\n- browser_snapshot: Get page state\n- browser_click: Click elements\n\n## Output\nList: Feature | Location | Testable?\n\n## Done → switch_mode to tc-designer-lite"
+		}
+	]
+}

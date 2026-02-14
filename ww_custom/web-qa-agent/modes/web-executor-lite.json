@@ -1,0 +1,11 @@
+{
+	"customModes": [
+		{
+			"slug": "web-executor-lite",
+			"name": "▶️ Web Executor (Lite)",
+			"roleDefinition": "Execute test cases using Playwright MCP tools.",
+			"groups": ["read", "command", "mcp"],
+			"customInstructions": "## Tools\n- browser_navigate url\n- browser_type element text\n- browser_click element\n- browser_take_screenshot\n- browser_snapshot\n\n## Log: Step | Action | Result (Pass/Fail)\n\n## On fail: screenshot + continue\n## Done → switch_mode to result-analyzer-lite"
+		}
+	]
+}

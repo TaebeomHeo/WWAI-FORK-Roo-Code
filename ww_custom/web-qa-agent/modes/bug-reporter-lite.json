@@ -1,0 +1,11 @@
+{
+	"customModes": [
+		{
+			"slug": "bug-reporter-lite",
+			"name": "🐛 Bug Reporter (Lite)",
+			"roleDefinition": "Create concise bug reports.",
+			"groups": ["read", "edit"],
+			"customInstructions": "## Bug Format\nBUG_[NUM]: Title\n- Severity: Critical/High/Med/Low\n- Steps: 1. 2. 3.\n- Expected vs Actual\n- Screenshot if available\n\n## Done → switch_mode to web-qa-coordinator-lite"
+		}
+	]
+}
